@@ -14,6 +14,7 @@
 
 body{
     background: var(--button-color);
+    /* position: relative; */
     /* overflow: hidden; */
 }
 
@@ -235,6 +236,7 @@ nav .fas{
     background-color: rgba(0, 0, 0, 0.548);
     display: none;
     z-index: 2;
+    height: 100%;
 }
 
 /* popup */
@@ -730,7 +732,7 @@ nav{
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-20%, -50%) scale(0.1);
+    transform: translate(-50%, -50%) scale(0.1);
     color: var(--black-color);
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
@@ -741,8 +743,8 @@ nav{
 
 .open-popup{
     visibility: visible;
-    top: 30%;
-    transform: translate(-20%, -50%) scale(1);
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
 }
 
 }
@@ -876,9 +878,9 @@ nav{
     height: 15%;
     background-color: var(--white-color);
     position: absolute;
-    top: 0;
+    top: 0%;
     left: 50%;
-    transform: translate(-20%, -50%) scale(0.1);
+    transform: translate(-50%, -50%) scale(0.1);
     color: var(--black-color);
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
@@ -889,8 +891,8 @@ nav{
 
 .open-popup{
     visibility: visible;
-    top: 30%;
-    transform: translate(-20%, -50%) scale(1);
+    top: 18%;
+    transform: translate(-50%, -60%) scale(1);
 }
 
 }
@@ -1047,8 +1049,8 @@ nav{
 
 .open-popup{
     visibility: visible;
-    top: 30%;
-    transform: translate(-20%, -50%) scale(1);
+    top: 18%;
+    transform: translate(-50%, -60%) scale(1);
 }
 }
 
@@ -1192,7 +1194,7 @@ nav{
     background-color: var(--white-color);
     position: absolute;
     top: 0;
-    left: 30%;
+    left: 50%;
     transform: translate(-20%, -50%) scale(0.1);
     color: var(--black-color);
     visibility: hidden;
@@ -1204,8 +1206,8 @@ nav{
 
 .open-popup{
     visibility: visible;
-    top: 30%;
-    transform: translate(-20%, -50%) scale(1);
+    top: 18%;
+    transform: translate(-50%, -60%) scale(1);
 }
 }
 
@@ -1346,7 +1348,7 @@ nav{
     background-color: var(--white-color);
     position: absolute;
     top: 0;
-    left: 24%;
+    left: 50%;
     transform: translate(-20%, -50%) scale(0.1);
     color: var(--black-color);
     visibility: hidden;
@@ -1358,8 +1360,8 @@ nav{
 
 .open-popup{
     visibility: visible;
-    top: 25%;
-    transform: translate(-20%, -50%) scale(1);
+    top: 18%;
+    transform: translate(-50%, -60%) scale(1);
 }
 }
 
@@ -1504,7 +1506,7 @@ nav{
     background-color: var(--white-color);
     position: absolute;
     top: 0;
-    left: 30%;
+    left: 50%;
     transform: translate(-20%, -50%) scale(0.1);
     color: var(--black-color);
     visibility: hidden;
@@ -1516,8 +1518,8 @@ nav{
 
 .open-popup{
     visibility: visible;
-    top: 25%;
-    transform: translate(-20%, -50%) scale(1);
+    top: 18%;
+    transform: translate(-50%, -50%) scale(1);
 }
 }
 
@@ -1667,7 +1669,7 @@ nav{
     background-color: var(--white-color);
     position: absolute;
     top: 0;
-    left: 24%;
+    left: 50%;
     transform: translate(-20%, -50%) scale(0.1);
     color: var(--black-color);
     visibility: hidden;
@@ -1679,7 +1681,7 @@ nav{
 
 .open-popup{
     visibility: visible;
-    top: 25%;
-    transform: translate(-20%, -50%) scale(1);
+    top: 18%;
+    transform: translate(-50%, -50%) scale(1);
 }
 }

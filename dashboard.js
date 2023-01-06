@@ -34,15 +34,17 @@ const overlay = document.querySelector(".overlay");
 // Overlay Cancel Popup
 
 function openPopup(e) {
-    let me = e.target.parentNode.querySelector('.popup');
+    let me = e.target.parentNode.parentNode.querySelector('.popup');
     me.classList.add('open-popup');
     $(".overlay").css('display', 'block');
+    // $('body').css("overflowY", "hidden");
 }
 
 function closePopup(e) {
     let me = e.target.parentNode;
     me.classList.remove('open-popup');
     $(".overlay").css('display', 'none');
+    $('body').css("overflowY", "scroll");
 }
 
 
@@ -56,6 +58,7 @@ function rmOverlay() {
     popup_deposit.classList.remove('open-popup');
     popup_withdraw.classList.remove('open-popup'); 
     $(".overlay").css('display', 'none');
+    $('body').css("overflowY", "scroll");
 }
 
 
@@ -66,6 +69,7 @@ button_1.addEventListener('click', function(e){
 sideButton1.addEventListener('click', function(e){
     popup_balance.classList.add('open-popup');
     overlay.style.display = 'block';
+    // $('body').css("overflowY", "hidden");
 })
 
 close_popup.addEventListener('click', function(e){
@@ -81,6 +85,7 @@ button_2.addEventListener('click', function(e){
 sideButton2.addEventListener('click', function(e){
     popup_transfer.classList.add('open-popup');
     overlay.style.display = 'block';
+    // $('body').css("overflowY", "hidden");
 })
 
 close_transfer_popup.addEventListener('click', function(e){
@@ -95,6 +100,7 @@ button_3.addEventListener('click', function(e){
 sideButton3.addEventListener('click', function(e){
     popup_deposit.classList.add('open-popup');
     overlay.style.display = 'block';
+    // $('body').css("overflowY", "hidden");
 })
 
 close_deposit_popup.addEventListener('click', function(e){
@@ -109,6 +115,7 @@ button_4.addEventListener('click', function(e){
 sideButton4.addEventListener('click', function(e){
     popup_withdraw.classList.add('open-popup');
     overlay.style.display = 'block';
+    // $('body').css("overflowY", "hidden");
 })
 
 close_withdraw_popup.addEventListener('click', function(e){
