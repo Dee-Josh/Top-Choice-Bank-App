@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* Page Reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root{
@@ -11,6 +15,7 @@
     --black-opaque-color: #000000bb;
     --hover-color: #0000ff98;
     --button-color: #ffe3ffC2;
+    --button-color: #dd5c92c2;
     --toggle-color: #ffe3fff1;
 }
 
@@ -21,7 +26,8 @@ body{
 .container{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(35, 62, 87, 0.995), rgba(35, 62, 87, 0.604), rgba(35, 62, 87, 0.404)), url(/Img/logo.png);
+    /* background: linear-gradient(rgba(35, 62, 87, 0.985), rgba(35, 62, 87, 0.877), rgba(35, 62, 87, 0.804)), url(/Img/logo.png); */
+    background: linear-gradient(rgba(0, 0, 0, 0.981), rgba(0, 0, 0, 0.966), rgba(35, 62, 87, 0.994)), url(/Img/logo.png);
     background-position: center;
     background-size: cover;
     animation: slide 90s infinite;
@@ -156,7 +162,12 @@ nav:hover .logo h2{
 /* SECTION */
 
 .section1{
+    width: 100%;
+    margin: auto;
+    text-align: center;
     padding: 180px 8%;
+    padding-top: 280px;
+    /* height: calc(100vh - 130px); */
 }
 
 .text{
@@ -164,8 +175,9 @@ nav:hover .logo h2{
 }
 
 .section1 h2{
-    max-width: 500px;
-    font-size: 50px;
+    max-width: 510px;
+    margin: auto;
+    font-size: 60px;
     color: var(--white-color);
 }
 
@@ -234,7 +246,7 @@ nav:hover .logo h2{
 
 .content1-row img{
     margin-top: 10px;
-    width: 150px;
+    width: 160px;
     border-bottom: 2px solid var(--black-color);
 }
 
@@ -247,6 +259,7 @@ nav:hover .logo h2{
     align-items: center;
     text-align: center;
     transition: all 0.5s;
+    padding: 0 15px;
 }
 
 .content1-row:hover{
@@ -305,6 +318,7 @@ nav:hover .logo h2{
     align-items: center;
     text-align: center;
     transition: all .5s;
+    padding: 15px;
 }
 
 .content2-row:hover{
@@ -348,14 +362,15 @@ nav:hover .logo h2{
 }
 
 .section4 .company-content span{
-    color: var(--hover-color);
     font-weight: bold;
 }
 
 /* NEWSLETTER */
 .section5{
-    background: linear-gradient(rgba(18, 18, 19, 0.589),rgba(12, 12, 12, 0.486)), 
-    url(/image/atm-card-2.jpg);
+    /* background: linear-gradient(rgba(18, 18, 19, 0.589),rgba(12, 12, 12, 0.486)), 
+    url(/image/atm-card-2.jpg); */
+    background-color: white;
+    border: 2px solid var(--button-color);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -368,7 +383,8 @@ nav:hover .logo h2{
 .section5 .news-letter p{
     text-align: center;
     padding-top: 40px;
-    color: var(--white-color);
+    color: var(--black-color);
+    font-weight: bold;
     font-size: 20px;
 }
 
@@ -383,6 +399,11 @@ nav:hover .logo h2{
     outline: none;
     background-color: var(--button-color);
     border: none;
+
+}
+
+.section5 .news-letter-form input::placeholder{
+    color: black;
 }
 
 .section5 .news-button{
@@ -418,7 +439,7 @@ footer{
     padding: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     border-bottom: 5px solid var(--button-color);
 }
 
@@ -643,12 +664,13 @@ nav:hover .logo h2{
 
 .section1{
     padding: 200px 22%;
+    padding-top: 280px;
     text-align: center;
 }
 
 .section1 h2{
-    max-width: 500px;
-    font-size: 45px;
+    max-width: 530px;
+    font-size: 50px;
     color: var(--white-color);
 }
 
@@ -739,11 +761,12 @@ footer{
         margin-top: 40%;
         padding: 70px 20%;
         text-align: center;
+        padding-top: 280px;
     }
 
     .section1 h2{
         max-width: 500px;
-        font-size: 40px;
+        font-size: 45px;
         color: var(--white-color);
     }
 
@@ -783,33 +806,33 @@ footer{
 
 @keyframes slide{
     0%{
-        background: linear-gradient(rgba(35, 62, 87, 0.995), rgba(35, 62, 87, 0.604), rgba(35, 62, 87, 0.404)), url(/Img/logo.png);
+        background: linear-gradient(rgba(0, 0, 0, 0.981), rgba(0, 0, 0, 0.966), rgba(35, 62, 87, 0.994)), url(/Img/logo.png);
         background-position: bottom;
         background-size: cover;
     }
     20%{
-        background: linear-gradient(rgba(35, 62, 87, 0.995), rgba(35, 62, 87, 0.604), rgba(35, 62, 87, 0.404)), url(/Img/t.svg);
+        background: linear-gradient(rgba(0, 0, 0, 0.981), rgba(0, 0, 0, 0.966), rgba(35, 62, 87, 0.994)), url(/Img/t.svg);
         background-position: right;
         background-size: cover;
     }
     20.01%{
-        background: linear-gradient(rgba(35, 62, 87, 0.995), rgba(35, 62, 87, 0.604), rgba(35, 62, 87, 0.404)), url(/Img/faster-transactions.png);
+        background: linear-gradient(rgba(0, 0, 0, 0.981), rgba(0, 0, 0, 0.966), rgba(35, 62, 87, 0.994)), url(/Img/faster-transactions.png);
         background-position: bottom;
         background-size: cover;
     }
     50%{
-        background: linear-gradient(rgba(35, 62, 87, 0.995), rgba(35, 62, 87, 0.604), rgba(35, 62, 87, 0.404)), url(/Img/logo.png);
+        background: linear-gradient(rgba(0, 0, 0, 0.981), rgba(0, 0, 0, 0.966), rgba(35, 62, 87, 0.994)), url(/Img/logo.png);
         background-position: left;
         background-size: cover;
     }
     50.01%{
-        background: linear-gradient(rgba(35, 62, 87, 0.995), rgba(35, 62, 87, 0.604), rgba(35, 62, 87, 0.404)), url(/Img/transfer.png);
+        background: linear-gradient(rgba(0, 0, 0, 0.981), rgba(0, 0, 0, 0.966), rgba(35, 62, 87, 0.994)), url(/Img/transfer.png);
         background-position: top;
         background-size: cover;
     }
     
     100%{
-        background: linear-gradient(rgba(35, 62, 87, 0.995), rgba(35, 62, 87, 0.604), rgba(35, 62, 87, 0.404)), url(/Img/wallet.png);
+        background: linear-gradient(rgba(0, 0, 0, 0.981), rgba(0, 0, 0, 0.966), rgba(35, 62, 87, 0.994)), url(/Img/wallet.png);
         background-position: bottom;
         background-size: cover;
     }
