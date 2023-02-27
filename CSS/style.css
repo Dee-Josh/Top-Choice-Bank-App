@@ -260,6 +260,7 @@ nav:hover .logo h2{
     text-align: center;
     transition: all 0.5s;
     padding: 0 15px;
+    margin-bottom: 25px;
 }
 
 .content1-row:hover{
@@ -319,6 +320,7 @@ nav:hover .logo h2{
     text-align: center;
     transition: all .5s;
     padding: 15px;
+    margin-bottom: 25px;
 }
 
 .content2-row:hover{
